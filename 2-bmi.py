@@ -1,4 +1,3 @@
-gender = input("Jinsingizni kirgazing!")
 weight = int(input("Vazningizni kirgazing (67): "))
 height = float(input("Bo'yingiz balandligini kirgazing (1.73): "))
 
