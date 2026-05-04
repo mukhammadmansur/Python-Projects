@@ -5,33 +5,33 @@ print("""    Qanday hisobni amalga oshirmoqchisiz?
     BMI: 3;
       """)
       
-calcType = input("Tanlash: ")
+calcType = input("Tanlang: ")
 
 if calcType == "1":
     print("""
     calculator ishlamoqda...""")
 
     firstNum = int(input("Birinchi sonni kirgazing!: "))
-    mathAc = input("Amalni kirgazing!: ")
+    mathAc = input("Amalni kirgazing!(+, -, *, /, **): ")
     secondNum = int(input("Ikkinchi sonni kirgazing!: "))
 
-    if ( mathAc == "+" ):
+    if mathAc == "+" :
 
         print(f"{firstNum} + {secondNum} = {firstNum + secondNum}");
 
-    elif ( mathAc == "-" ):
+    elif mathAc == "-":
         print(f"{firstNum} - {secondNum} = {firstNum - secondNum}");
 
-    elif ( mathAc == "*" ):
+    elif mathAc == "*":
         print(f"{firstNum} * {secondNum} = {firstNum * secondNum}");
 
-    elif ( mathAc == "/" ):
+    elif mathAc == "/" :
         if secondNum != 0:
             print(f"{firstNum} / {secondNum} = {int(firstNum / secondNum)}");
         else :
             print("0 ga bo'lib bo'lmaydi");
 
-    elif (mathAc == "**", "darajaga ko'tar"):
+    elif mathAc == "**" or "darajaga ko'tar":
         print(f"{firstNum} ** {secondNum} = {firstNum ** secondNum}");
 
     else : print('Amallarda xatolik bor')
@@ -96,17 +96,17 @@ elif calcType == "2":
 elif calcType == "3":
     print("""
     BMI ishlamoqda...""")
-    
+
     weight = int(input("Vazningizni kirgazing (67): "))
     height = float(input("Bo'yingiz balandligini kirgazing (1.73): "))
 
     bmi = int( weight / (height * 2));
 
-    if (bmi < 18.5):
+    if bmi < 18.5:
         print("Umumiy ball:",bmi, "!Sizda ozg'inlik aniqlandi!");
-    elif (bmi >= 18.5 and bmi <= 30):
+    elif bmi >= 18.5 and bmi <= 30:
         print("Umumiy ball:",bmi, '!Siz Normal vaznga egasiz!');
-    elif (bmi > 30):
+    elif bmi > 30:
         print("Umumiy ball:",bmi, "!Sizda Semizlik mavjud!");
     else :
         print("Qiymat berishda xatolik bor!!!")
